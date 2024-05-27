@@ -6,7 +6,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Sandi";
+  sender = "Repan";
 }
 
 let footer = document.getElementById("credit");
@@ -15,7 +15,7 @@ footer.innerHTML = sender;
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire("Hai", "aku mau nanya sama kamu?", "question").then(function () {
-    Swal.fire("jujur ya!").then(function () {
+    Swal.fire("Jujur ya!").then(function () {
       Swal.fire("Jangan bohong, OK!!", "", "error").then(function () {
 
         const {
@@ -66,7 +66,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`kalau kangen coba chat/telfon, ${sender} juga kangen sama ${nama} :((`).then(function () {
+                        Swal.fire(`kalau kangen coba chat/telfon, ${sender} juga kangen sama ${nama}, cuma bingung mau bilang apa, takut ganggu kamuu :((`).then(function () {
                           Swal.fire('Terakhir yaa...').then(function () {
                             Swal.fire('Coba klik ikon hati di paling bawah dong')
                           })
